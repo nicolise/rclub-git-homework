@@ -15,3 +15,37 @@ git add myfile.csv
 #click COMMIT button, window should pop up
 #always enter a COMMIT message
 git commit -m 'Initial commit: first day notes. Init, stage, commit.'
+
+#try logview by clicking on a branch: shows all commits
+#each commit has a 40-char ID (SHA I hash)
+git log
+git diff HEAD^
+
+#for each commit, deleted lines in red, new lines in green
+git commit -a -m 'save plot'
+
+#switch to a previous version of a git repo: 'check out' a different commit
+git checkout HEAD^
+git checkout HEAD^^^
+git checkout master
+
+#push a local git repo to github/bitbucket
+#FIRST create new repo on github
+#copy URL to make github repo a remote repo
+#in sourcetree, go to repo settings, add remote repo
+#default remote name: origin
+#PUSH local repo to remote repo on GitHub
+#and choose which branches to push
+#if push master: same commit as origin/master, so branches are in sync
+#can confirm on github
+git remote add origin https://github.com/nicolise/rclub-git-homework.git
+git push -u origin master
+
+#now do the same on bitbucket
+cd /path/to/my/repo
+git remote add origin-bitbucket https://nicolise@bitbucket.org/nicolise/rclub-git-homework.git
+git push -u origin-bitbucket --all # pushes up the repo and its refs for the first time
+git push -u origin-bitbucket --tags # pushes up any tags
+git push -u origin-bitbucket master
+
+#in sourcetree, add remote repo and click globe
