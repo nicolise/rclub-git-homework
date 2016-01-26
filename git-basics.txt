@@ -1,0 +1,4 @@
+#create a new local repo
+mkdir ~/git.repos/rclub-git-hw
+cd ~/git.repos/rclub-git-hw
+git init
