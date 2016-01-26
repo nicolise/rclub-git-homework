@@ -2,3 +2,16 @@
 mkdir ~/git.repos/rclub-git-hw
 cd ~/git.repos/rclub-git-hw
 git init
+
+#then move a data file into new repo
+#using Explorer or word programs etc. to move files into directory
+#file will show up in repo under SourceTree
+#file is in the same directory as git repo, BUT NOT ACTUALLY IN REPO YET
+#so, STAGE the file to add it to the repo index
+#can drag file into staging area in SourceTree
+git add myfile.csv
+#green content is new to git repo
+#commit changes to the newly staged files
+#click COMMIT button, window should pop up
+#always enter a COMMIT message
+git commit -m 'Initial commit: first day notes. Init, stage, commit.'
