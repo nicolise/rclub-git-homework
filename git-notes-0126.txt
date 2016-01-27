@@ -1,0 +1,47 @@
+notes- 01/26/16 discussion
+
+try image analysis scripts on github
+and manuscript
+
+bitbucket feature: private repos free for academics
+github: repo turns into a website!
+
+stage: place file in directory THEN stage - index for commit THEN commit
+git does not do well with large non-text files
+
+make .gitignore file
+include file name patterns to match 
+main directory == git init --> git repo here
+/DATA
+/scripts
+/output
+/paper
+are the subdirectories
+want git to ignore all but /scripts
+define in .gitignore
+
+different pieces of code in different directories within repo:
+can stage in groups across directories -- collect everything that you want to be committed together
+all or none
+
+commit: changes permanent part in repository
+can comment on change content of the commit
+
+stage: internal control?
+on command line:
+$ git diff #and color words
+
+can also stage lines/ hunks to a single commit
+
+always pull before you push
+
+data storage: dryad, SRA, iplant...
+and include a readme that gives url for data // brief snippet describing data
+can also include data as zipped in downloads on github
+
+slow: committing large binary files (images, BAM, .bzip)
+
+keep things updated across your OWN computers!!
+virtual lab notebook
+help find bugs
+record of things you've tried
