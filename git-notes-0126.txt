@@ -45,3 +45,7 @@ keep things updated across your OWN computers!!
 virtual lab notebook
 help find bugs
 record of things you've tried
+
+git commit -m 'Hi Kzu'
+git add newfile.txt
+git commit --amend -m 'Hi Kazu'
